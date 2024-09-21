@@ -1,0 +1,40 @@
+@import "../app/assets/colors";
+
+.custom-drop-down-overlay {
+  .ant-dropdown-menu {
+    border: 1px solid $border-color-one !important;
+    box-shadow: 3px 3px 0 $border-color-one !important;
+    padding: 0 !important;
+
+    .ant-dropdown-menu-item {
+      border-radius: 0 !important;
+      padding: 14px 6px !important;
+      transition: .4s ease-in-out all !important;
+
+      .custom-drop-down-overlay-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          margin-left: 16px;
+        }
+      }
+
+      &:hover {
+        background-color: $primary-color !important;
+      }
+    }
+
+    .ant-dropdown-menu-item:first-child {
+      border-top-right-radius: 8px !important;
+      border-top-left-radius: 8px !important;
+    }
+
+    .ant-dropdown-menu-item:last-child {
+      border-bottom-right-radius: 8px !important;
+      border-bottom-left-radius: 8px !important;
+    }
+
+  }
+}

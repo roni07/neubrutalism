@@ -1,0 +1,42 @@
+@import "../../assets/colors";
+
+.card-one {
+
+  height: 550px;
+  border: 2px solid $border-color-one;
+  border-radius: 8px;
+  transition: .4s ease-in-out all;
+
+  .card-one-image-content {
+    height: 480px;
+    width: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border-bottom: 2px solid $border-color-one;
+    }
+  }
+
+  .card-one-item-content {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: $card-one-bottom-bgc;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &:hover {
+    box-shadow: 3px 3px 0 $border-color-one;
+  }
+}
